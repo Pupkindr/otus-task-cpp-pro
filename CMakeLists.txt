@@ -1,9 +1,10 @@
-# Требуем как можно более высокую версию.
 cmake_minimum_required(VERSION 3.22 FATAL_ERROR)
 
-# Инструкция project не может быть помещена в функцию.
-project(otus-task-cpp-pro)
+project(OtusTaskCppPro VERSION 1.0)
 
-include(cmake/functions.cmake)
+add_executable(main main.cpp)
 
-add_subdirectory(src)
+target_include_directories(main PUBLIC ${PROJECT_BINARY_DIR})
+
+configure_file(main.hpp.in main.hpp)
+
