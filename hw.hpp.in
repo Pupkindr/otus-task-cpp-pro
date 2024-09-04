@@ -1,5 +1,0 @@
-#define TOSTR(X)        #X
-#define VERSION_MAJOR   TOSTR(@OtusTaskCppPro_VERSION_MAJOR@)
-#define VERSION_MINOR   TOSTR(@OtusTaskCppPro_VERSION_MINOR@)
-
-#define VERSION VERSION_MAJOR "." VERSION_MINOR

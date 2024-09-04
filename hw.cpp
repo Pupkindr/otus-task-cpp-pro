@@ -1,10 +1,10 @@
 #include <iostream>
-#include "hw.hpp"
+#include "build_counter.hpp"
 
 using namespace std;
 
 int main()
 {
-    cout << "Version: " << VERSION << endl << "Hello, World!" << endl;
+    cout << "Version: " << BUILD_NUMBER << endl << "Hello, World!" << endl;
     return 0;
 }
